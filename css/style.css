@@ -12,7 +12,9 @@ section {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 840px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -23,8 +25,7 @@ section {
 
 p {
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 20px;
     font-size: 40px;
 }
 
@@ -61,4 +62,20 @@ input {
 
 .submit:hover {
     background-color: #fcac45;
+}
+@media screen and (max-width: 550px){
+
+    .container {
+        flex-direction: column;
+    }
+    .result {
+        text-align: center;
+    }
+    p {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
 }
