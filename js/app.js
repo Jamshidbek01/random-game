@@ -7,6 +7,9 @@ btn.addEventListener('click', function () {
     if (input == random) {
         text.innerHTML = 'To`g`ri'
         body.style.backgroundColor = 'rgb(153, 255, 0)'
+    } else if (input < 0) {
+        text.innerHTML = 'Iltimos 0dan 50gacha bo`lgan son kiriting'
+        body.style.backgroundColor = 'orange'
     } else if (input < random) {
         text.innerHTML = 'Kattaroq son kiriting'
         body.style.backgroundColor = 'red'
